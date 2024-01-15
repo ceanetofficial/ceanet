@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Saira:ital,wght@0,100;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #2c3e50; */
 }
 
-nav {
-  padding: 30px;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  /* border: 1px solid red; */
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+body {
+  max-width: 1440px;
+  margin: 0;
+  /* height: 4008px; */
+  /* overflow-x: hidden; */
 
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
