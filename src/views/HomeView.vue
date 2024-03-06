@@ -3,51 +3,64 @@
     <Nav></Nav>
 
     <div class="wall">
-      <p>Fostering the Mutual Growth of the<span>Cyberspace</span></p>
-      <button><a href="">join us</a></button>
+       <p>Fostering the Mutual Growth of the<span>Cyberspace</span></p>
     
 
     </div>
 
-    <div class="about-container">
-      <div class="frame-1">
-          <img class="vertical-bar-2" :src="verticlbar2">
-          <div class="about">About us</div>
-      </div>
-      <p>CEANet, the Cybersecurity Education and Awareness 
-          Network, is on a mission to empower and educate students 
-          and individuals about the critical importance of 
-          cybersecurity. Our goal is to equip the younger 
-          generation with the knowledge and skills needed to 
-          navigate the ever-evolving digital landscape securely.
-      </p>
+    <div id="about" class="about-group-container">
+        <div class="about-container">
+        <div class="frame-1">
+            <img class="vertical-bar-2" :src="verticlbar2">
+            <div class="about">About us</div>
+        </div>
+        <p>CEANet, the Cybersecurity Education and Awareness 
+            Network, is on a mission to empower and educate students 
+            and individuals about the critical importance of 
+            cybersecurity. Our goal is to equip the younger 
+            generation with the knowledge and skills needed to 
+            navigate the ever-evolving digital landscape securely.
+        </p>
+
+        </div>
+
+
+        <img :src="Group1" alt="group 1">
 
     </div>
-
-
-    <img :src="Group1" alt="group 1">
     
     <div class="left-shield"></div>
     <div class="right-shield"></div>
 
-    <img class="what-illustartion" :src="Whatwedoillustartion" alt="">
+    <div class="illustration-what-container">
 
-    <div class="frame-1 what">
-      <img class="vertical-bar-2" :src="verticlbar2">
-      <div class="about">What we do</div>
+    
+        
+        <img class="what-illustartion" :src="Whatwedoillustartion" alt="">
+
+
+        <div class="frame-what-container">
+
+            <div id="what" class="frame-1 what">
+                <img class="vertical-bar-2" :src="verticlbar2">
+                <div class="about">What we do</div>
+            </div>
+
+            <div class="what-container">
+                <img :src="Virtual" alt="">
+                <img :src="Physical" alt="">
+                <img :src="Careersupport" alt="">
+                <p class="what-we-do-text">Virtual Engagements</p>
+                <p class="what-we-do-text">Outdoor Engagements</p>
+                <p class="what-we-do-text">Career Networking</p>
+        
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="what-container">
-      <img :src="Virtual" alt="">
-      <img :src="Physical" alt="">
-      <img :src="Careersupport" alt="">
-      <p class="what-we-do-text">Virtual Engagements</p>
-      <p class="what-we-do-text">Outdoor Engagements</p>
-      <p class="what-we-do-text">Career Networking</p>
-      
-    </div>
-
-    <div class="frame-2">
+    
+    <div id="become" class="frame-2">
 
       <div class="frame-2-bar"></div>
       <div class="frame-2-1">
@@ -137,6 +150,10 @@ export default {
   
 }
 
+body {
+    /* padding: 0 133px; */
+}
+
 a {
   text-decoration: none;
 }
@@ -174,67 +191,21 @@ a {
     margin-left: 20px;
 }
 
-.wall button {
+.about-group-container {
     position: relative;
-    top: 36px;
-    left: 1040px;
-    /* width: 133px; */
-    height: 57px;
-    background-color: #3C3;
-    font-family: Saira;
-    text-transform: uppercase;
-    border: 1px solid #3C3;
-    border-radius: 10px;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 133px;
+    flex-direction: row;
+    top: 160px;
 }
-
-.wall button a {
-    color: white;
-    text-decoration: none;
-    font-family: Saira;
-}
-
-
-.left-shield {
-    position: absolute;
-    top: 1300px;
-    width: 470px;
-    height: 626px;
-    background-image: url('/src/assets/images/left-shield.png');
-     background-repeat: no-repeat;
-    /* border: 1px solid red; */
-    z-index: -1;
-}
-
-.right-shield {
-    position: absolute;
-    top: 1980px;
-    left: 1150px;
-    background-image: url('/src/assets/images/right-shield.png');
-    width: 470px;
-    height: 626px;
-    z-index: -1;
-    background-repeat: no-repeat;
-}
-
-.right-shield + img {
-    position: relative;
-    right: 450px;
-    top: 350px;
-    /* border: 1px solid red; */
-}
-
 
 .about-container {
     position: relative;
     /* border: 1px solid black; */
-    width: 500px;
-    top: 160px;
-    left: 90px;
+    width: 700px;
+    /* top: 160px; */
+    /* left: 90px; */
 }
 .frame-1 {
     position: relative;
@@ -270,10 +241,10 @@ a {
     color: #000;
     position: relative;
     /* top: 130px; */
-    width: 544px;
+    width: 700px;
     height: 360px;
     text-align: justify;
-    font-size: 28px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: 162.122%;
@@ -282,9 +253,9 @@ a {
 
 .about-container + img {
     position: relative;
-    left: 754px;
-    /* border: 1px solid red; */
-    bottom: 420px;
+    width: 633px;
+    height: 492px;
+
 }
 
 .frame-2 {
@@ -324,18 +295,66 @@ a {
     text-align: center;
 }
 
+
+
+.left-shield {
+    position: relative;
+    margin-top: -150px;
+    width: 470px;
+    height: 626px;
+    background-image: url('/src/assets/images/left-shield.png');
+     background-repeat: no-repeat;
+    /* border: 1px solid red; */
+    z-index: -1;
+}
+
+.right-shield {
+    position: relative;
+    right: -1715px;
+    background-image: url('/src/assets/images/right-shield.png');
+    width: 470px;
+    height: 626px;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+
+.illustration-what-container {
+    position: relative;
+    height: 460px;
+    margin-top: -820px;
+    padding: 0 133px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.what-illustartion {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+
+.frame-what-container {
+    position: relative;
+    width: 600px;
+    height: 460px;
+    /* top: -505px; */
+
+
+}
+
 .what {
     position: relative;
-    top: -200px;
-    left: 730px;
+    
 }
 
 .what-container {
-    width: 590px;
+    top: 120px;
+    width: 600px;
     height: 262px;
     position: relative;
-    left: 730px;
-    top: -70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-rows: repeat(3, 1fr);
@@ -375,23 +394,25 @@ a {
 }
 
 .pp-grid {
-    display: grid;
+    display: flex;
     position: relative;
-    gap: 20px;
-    margin-left: -8px;
-    /* margin: auto; */
-    /* grid-template-rows: repeat(2, 1fr); */
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding: 0 133px; */
+ 
 }
 
 .pp-container {
+    position: relative;
+    /* display: flex; */
+
     
 }
 
 .pp-frame {
     position: relative;
     top: 220px;
-    left: 80px;
+    /* left: 80px; */
     width: 500px;
     height: 410px;
     background-color: white;
@@ -411,7 +432,7 @@ a {
 .pp-header {
     position: relative;
     top: 245px;
-    left: 165px;
+    left: 85px;
     width: 324px;
     height: 58px;
     background-color: #3C3;
@@ -479,7 +500,7 @@ a {
 
 .pp-frame:hover img{
     opacity: 0;
-    /* transition: 1.5s; */
+    transition: 0.1s;
 } 
 
 
@@ -503,6 +524,6 @@ a {
 
 .pp-frame:hover .pp-logo-text {
     opacity: 1;
-    transition: 1s ease;
+    transition: 0.1s ease;
 }
 </style>

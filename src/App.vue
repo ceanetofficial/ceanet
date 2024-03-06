@@ -22,10 +22,10 @@
 }
 
 body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0;
   /* height: 4008px; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 
 }
 </style>

@@ -11,23 +11,23 @@
 
 
             <div class="footer-links">
-                <a class="footer-links-head" href="">home</a>
-                <a class="footer-links-head" href="">program</a>
+                <a class="footer-links-head" href="/">home</a>
+                <a class="footer-links-head" href="/programs">program</a>
                 <a class="footer-links-head" href="">catalog</a>
-                <a class="footer-links-head" href="">about</a>
+                <a class="footer-links-head" href="/about">about</a>
 
-                <a class="footer-links-item" href="">About Us</a>
-                <a class="footer-links-item" href="">Virtual</a>
+                <a class="footer-links-item" href="/#about">About Us</a>
+                <a class="footer-links-item" href="programs#virtual">Virtual</a>
                 <a class="footer-links-item" href="">Past</a>
                 <a class="footer-links-item" href="">Founders</a>
 
-                <a class="footer-links-item" href="">What We Do</a>
-                <a class="footer-links-item" href="">Outdoor</a>
+                <a class="footer-links-item" href="/#what">What We Do</a>
+                <a class="footer-links-item" href="programs#outdoor">Outdoor</a>
                 <a class="footer-links-item" href="">Active</a>
                 <a class="footer-links-item" href="">Mission</a>
 
-                <a class="footer-links-item" href="">Become a Member</a>
-                <a class="footer-links-item" href="">Career Networking</a>
+                <a class="footer-links-item" href="/#become">Become a Member</a>
+                <a class="footer-links-item" href="programs#career">Career Networking</a>
                 <a class="footer-links-item" href="">Upcoming</a>
                 <a class="footer-links-item" href="">Vision</a>
                 
@@ -38,13 +38,19 @@
             <a href="https://www.linkedin.com/company/ceanetofficial/"><img :src="linkedin" alt="LinkedIn icon"></a>
             <a href="https://twitter.com/ceanetofficial"><img :src="twitter" alt="twitter_x icon"></a>
             <a href=""><img :src="whatsapp" alt=""></a>
-            <a class="email" href=""><img :src="email" alt=""></a>
-            <p>ceanetofficial@gmail.com</p>
-            <a class="phone" href=""><img :src="telephone" alt=""></a>
-            <p>+2348112233444</p>
+            <div class="email-phone">
+                <a class="email" ><img :src="email" alt=""></a>
+                <a href="mailto:ceanetofficial@gmail.com">ceanetofficial@gmail.com</a>
+
+                <a class="phone" ><img :src="telephone" alt=""></a>
+                <a href="tel:+234-80-3456-7890">08034567890</a>
+
+
+            </div>
+            
             <div class="foot-join">
-                <a href="" class="footer-link2">partner with us</a>
-                <a href="" class="footer-link2">join us</a>
+                <a href="/partner#partner-with-us" class="footer-link2">partner with us</a>
+                <a href="/partner#join-us" class="footer-link2">join us</a>
             </div>
             
             <img class="line1" :src="line" alt="">
@@ -93,7 +99,7 @@ footer {
     color: white;
     position: relative;
     top: 80px;
-    padding-left: 131px;
+    padding: 0 131px;
 }
 
 .footer-logo {
@@ -119,14 +125,16 @@ footer {
 }
 
 .footer-links {
-    width: 465px;
-    height: 110px;
+    width: 565px;
+    height: 150px;
     position: absolute;
     display: grid;
+    /* gap: 5px; */
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    left: 900px;
-    bottom: 320px;
+    right: 131px;
+    margin-top: -230px;
+
 }
 
 .footer-links-head {
@@ -147,7 +155,7 @@ footer {
 .footer-links-item {
     color: #989898;
     font-family: Red Hat Display;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -168,13 +176,10 @@ footer img {
 
 .email {
     position: relative;
-    margin-left: 580px;
-    margin-bottom: 99px;
-    margin-top: 30px;
-    bottom: 10px;
+  
 }
 
-.email + p {
+.email + a {
     display: inline;
     position: relative;
     color: #FFF;
@@ -182,17 +187,15 @@ footer img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    bottom: 30px;
+    bottom: 20px;
 }
 
 .phone {
     display: inline;
     position: relative;
-    margin-left: 780px;
-    bottom: 20px;
 }
 
-.phone + p {
+.phone + a {
     display: inline;
     position: relative;
     bottom: 10px;
@@ -201,8 +204,15 @@ footer img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    bottom: 40px;
+    bottom: 20px;
 
+}
+
+.email-phone {
+    position: absolute;
+    right: 131px;
+    width: 400px;
+    bottom: 100px;
 }
 
 footer a {
@@ -215,7 +225,8 @@ footer a {
     display: flex;
     gap: 10px;
     bottom: 10px;
-    left: 456px;
+    justify-content: center;
+    /* width: 600px; */
 }
 
 .footer-link2 {
@@ -240,6 +251,7 @@ footer a {
     position: relative;
     /* left: 131px; */
     bottom: 10px;
+    width: 100%;
 
 }
 
@@ -251,7 +263,10 @@ footer a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    left: 435px;
+    /* left: 435px; */
+    /* width: 500px; */
+    text-align: center;
+
 }
 
 

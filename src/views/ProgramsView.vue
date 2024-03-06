@@ -22,7 +22,7 @@
             <div class="frame-2-bar"></div>
         </div>
 
-        <p class="virtual">Virtual Engagements</p>
+        <p id="virtual" class="virtual">Virtual Engagements</p>
 
         <p class="virtual-txt">Within the diverse range of virtual engagements, 
             we accommodate different learning styles, levels of expertise, 
@@ -83,7 +83,7 @@
 
         </div>
 
-        <p class="virtual top1">outdoor engagements</p>
+        <p id="outdoor" class="virtual top1">outdoor engagements</p>
         <p class="virtual-txt top2">We provide that excitement and novelty into 
             cybersecurity education and networking, making learning more 
             engaging and memorable while fostering a strong sense of 
@@ -115,7 +115,8 @@
             </div>
 
         </div>
-        <p class="virtual top3">CAREER SUPPORT</p>
+
+        <p id="career" class="virtual top3">CAREER SUPPORT</p>
         <p class="virtual-txt top4">We offer these resources and support mechanisms 
             to the community can significantly contribute to the growth and 
             development of individual members pursuing careers in this field.</p>
@@ -211,7 +212,8 @@ export default {
 .left-shield-pp {
     position: absolute;
     top: 1187px;
-    left: 1248px;
+    left: 1700px;
+    opacity: 0.5;
 }
 
 .right-shield-pp {
@@ -226,18 +228,18 @@ export default {
     left: 124px;
     color: #000;
     font-family: Red Hat Text;
-    font-size: 36px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 454px;
+    width: 544px;
     /* border: 1px solid red; */
 }
 
 .programs-ill {
     position: relative;
     top: -100px;
-    left: 456px;
+    left: 48%;
     /* border: 1px solid red; */
 }
 
@@ -314,14 +316,16 @@ export default {
 }
 
 .virtual-container {
-    width: 1180px;
+    /* width: 1180px; */
     height: 730px;
+    padding: 0 133px;
     /* border: 1px solid red; */
     position: relative;
     margin: auto;
     top: 100px;
     display: grid;
     gap: 30px;
+    /* column-gap: 100px; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
@@ -348,11 +352,12 @@ export default {
     position: relative;
     margin: auto;
     top: 500px;
-    width: 1180px;
+    /* width: 1180px; */
     /* height: 346px; */
     /* border: 1px solid red; */
     display: grid;
     gap: 30px;
+    padding: 0 133px;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -360,7 +365,8 @@ export default {
     position: relative;
     margin: auto;
     top: 300px;
-    width: 1180px;
+    padding: 0 133px;
+    /* width: 1180px; */
     /* border: 1px solid red; */
     display: grid;
     gap: 30px;
@@ -376,7 +382,7 @@ export default {
     flex-direction: column;
     gap: 30px;
     /* justify-items: center; */
-    padding: 10px;
+    /* padding: 30px; */
 }   
 
 
@@ -419,12 +425,13 @@ export default {
     color: #190340;
     text-align: center;
     font-family: Red Hat Text;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 150% */
-    width: 288px;
-    margin: auto;
+    line-height: 30px;
+    margin: 20px;
+    /* width: 488px; */
+    /* margin: auto; */
 }
 
 

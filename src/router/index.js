@@ -8,7 +8,7 @@ import PartnerView from '../views/PartnerView.vue'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: HomeView
   },
